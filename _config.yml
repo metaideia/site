@@ -1,30 +1,29 @@
 # ----
 # Site
-
-title: Treat Template
-url: "https://spring-bat.cloudvent.net/"
+#
+title: Metaideia
+url: "http://metaideia.com.br"
 baseurl:
 google_analytics_key:
-newsletter_action: "//your-mailchimp-action-url.com"
 disqus_shortname:
 facebook: metaideia
 instagram: metaideia
 
+navigation:
+  - name: Home
+    link: /
+  - name: Sobre
+    link: /sobre/
+  - name: Contato
+    link: /contato/
+
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Food blog template for Jekyll.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Treat Template
-  links:
-    - https://github.com/CloudCannon/treat-jekyll-template
+logo: /images/author.jpg
+description: Se alimentar diariamente das ideias que precisam fazer parte do seu mindset é a única maneira de garantir o seu sucesso.
 
 # -----
 # Build
-
+#
 paginate: 10
 paginate_path: "/:num/"
 permalink: pretty
@@ -37,7 +36,6 @@ defaults:
     values:
       layout: "post"
       push_sidebar_down: true
-      print_stylesheet: true
       comments: true
   -
     scope:
@@ -62,25 +60,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
-
-navigation:
-  - name: Home
-    link: /
-  - name: Sobre
-    link: /sobre
-  - name: Contato
-    link: /contato
