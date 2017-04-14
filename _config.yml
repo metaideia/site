@@ -76,3 +76,11 @@ social_icons:
   - Twitter
   - YouTube
   - RSS
+
+navigation:
+  - name: Home
+    link: /
+  - name: Sobre
+    link: /sobre
+  - name: Contato
+    link: /contato
