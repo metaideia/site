@@ -5,22 +5,29 @@ layout: default
 <article class="post">
   {% include post-heading.html post=page post_page=true %}
 
-  <div class="image">
-    <img src="{{ page.featured_image }}" alt="{{ page.title }}">
-  </div>
+  {% if page.featured_image %}
+    <div class="image">
+      <img src="{{ page.featured_image }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
 
   <div class="recipe-body">
     {{ content }}
   </div>
 
-  <div class="cta">
-    <h2>Essa sacada fez sentido pra você?</h2>
-    <p>Aproveite o embalo e encontre outras sacadas interessantes ;)</p>
-    <div class="button"><a href="{{ site.baseurl}}/sacadas">Ver mais</a></div>
-  </div>
+  {% if page.suggestions %}
+    <div class="cta">
+      <h2>Essa sacada fez sentido pra você?</h2>
+
+      <p>Aproveite o embalo e encontre outras sacadas interessantes ;)</p>
+
+      <div class="button"><a href="{{ site.baseurl}}/sacadas">Ver mais</a></div>
+    </div>
+  {% endif %}
 
   {% if site.disqus_shortname and page.comments %}
     <div id="disqus_thread"></div>
+
     <script>
       var disqus_shortname = '{{ site.disqus_shortname }}';
       var disqus_config = function () {

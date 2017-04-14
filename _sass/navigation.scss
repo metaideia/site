@@ -24,3 +24,13 @@ nav {
     }
   }
 }
+
+.footer-links {
+  a {
+    color: #444;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

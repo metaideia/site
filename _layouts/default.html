@@ -38,7 +38,13 @@
     <footer>
       <div class="container">
         <hr>
-        &copy; {{ site.time | date: "%Y" }} {{ site.title }}. Todos os direitos reservados.
+
+        <div class="footer-links">
+          <a href="{{ site.baseurl }}/termos">termos</a> |
+          <a href="{{ site.baseurl }}/privacidade">política de privacidade</a>
+        </div>
+
+        <span>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Todos os direitos reservados.</span>
       </div>
     </footer>
   </body>
