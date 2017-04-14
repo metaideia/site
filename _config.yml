@@ -7,6 +7,8 @@ baseurl:
 google_analytics_key:
 newsletter_action: "//your-mailchimp-action-url.com"
 disqus_shortname:
+facebook: metaideia
+instagram: metaideia
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
