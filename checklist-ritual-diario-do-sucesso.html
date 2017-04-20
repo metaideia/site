@@ -1,0 +1,60 @@
+---
+layout: false
+title: Checklist - Ritual Diário do Sucesso
+description: Um guia simples e prático para transformar sua rotina diária em um treinamento intensivo para o sucesso.
+---
+
+<!doctype html>
+<html>
+  {% include head.html %}
+
+  <body class="launch">
+    <div class="full-image" style="background-image: url('{{ site.baseurl }}/images/morning.jpg')"></div>
+
+    <div class="container main-content">
+      <section class="content">
+          <div class="checklist-cover">
+            <img src="{{ site.baseurl }}/images/checklist-sucesso.png" alt="Checklist">
+          </div>
+
+          <div class="checklist-content">
+            <h1>Um guia simples, prático e totalmente gratuito que irá transformar sua rotina diária em uma receita infalível para o sucesso.</h1>
+
+            <div class="form-launch">
+              <form action="http://hike.metaideia.com.br/api/subscriptions" method="post">
+                <input type="hidden" name="data[redirect_url]" value="http://metaideia.com.br">
+                <input type="hidden" name="data[list_id]" value="">
+
+                <input type="email" name="data[email]" placeholder="Digite seu melhor e-mail" autofocus required>
+                <p class="hint">Você receberá um link para o download em seu e-mail</p>
+
+                <button class="button button-launch" type="submit">BAIXAR CHECKLIST GRÁTIS</button>
+              </form>
+            </div>
+          </div>
+      </section>
+    </div>
+
+    <div class="container text-launch">
+      <h2>
+        Descubra na prática como potencializar suas chances de sucesso através de pequenos hábitos diários.
+        Rituais que farão sua energia, motivação e produtividade serem elevados aos níveis necessários
+        para que você possa alcançar os objetivos em todos os aspectos da sua vida.
+      </h2>
+
+      <h3><em>"Treine enquanto eles se divertem. Persista enquanto eles descansam. Viva enquanto eles sonham."</em></h3>
+
+      <button class="button button-launch to-form" type="button">QUERO LER O CHECKLIST</button>
+    </div>
+
+    {% include footer.html %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $('.button.to-form').on('click', function() {
+        $('html, body').animate({ scrollTop: $('.checklist-content').offset().top }, 300);
+        $('.form-launch input').focus();
+      });
+    </script>
+  </body>
+</html>

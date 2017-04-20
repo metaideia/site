@@ -1,0 +1,120 @@
+.hint {
+  margin-top: 5px;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.button-launch {
+  box-shadow: 0px 4px rgb(200, 120, 0);
+  border-radius: 7px;
+  padding: 15px 23px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(240, 180, 0);
+  color: #fff;
+  border: none;
+
+  &:hover {
+    box-shadow: 0px 1px rgb(200, 120, 0);
+    position:relative;
+    top: 3px;
+    background-color: rgb(240, 180, 0) !important;
+    color: #fff;
+  }
+}
+
+.text-launch {
+  text-align: center;
+  padding: 30px 20px 10px;
+
+  h3 {
+    padding: 30px 30px 0;
+    color: #777;
+
+    @media #{$desktop} {
+      padding: 30px 80px 0;
+    }
+  }
+}
+
+.other-thanks-text {
+  padding: 30px 50px 0;
+
+  ul {
+    list-style-position: inside;
+    margin: 0;
+  }
+
+  ol li {
+    margin-top: 0;
+  }
+}
+
+.full-image {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 410px;
+
+  @media #{$desktop} {
+    height: 570px;
+  }
+}
+
+.checklist-cover {
+  @media #{$desktop} {
+    float: left;
+    width: 30%;
+  }
+
+  img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.form-launch {
+  padding: 30px 20px;
+}
+
+.checklist-content {
+  padding-top: 10px;
+
+  @media #{$desktop} {
+    float: left;
+    max-width: 70%;
+    padding-top: 0;
+  }
+
+  h1 {
+    color: #FF1E4C;
+    padding: 10px 20px 0;
+  }
+}
+
+.launch {
+  .main-content {
+    padding: 30px 30px 0px 30px;
+
+    @media #{$desktop} {
+      padding: 90px 30px 0px 30px;
+      height: 480px;
+    }
+  }
+}
+
+.thanks-text {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 20px;
+
+  p {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+}
