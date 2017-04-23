@@ -9,14 +9,6 @@ disqus_shortname:
 facebook: metaideia
 instagram: metaideia
 
-navigation:
-  - name: Home
-    link: /
-  - name: Sobre
-    link: /sobre/
-  - name: Contato
-    link: /contato/
-
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /images/author.jpg
 description: Se alimentar diariamente das ideias que precisam fazer parte do seu mindset é a única maneira de garantir o seu sucesso.
