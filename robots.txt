@@ -5,4 +5,7 @@ sitemap: false
 
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
-Disallow: /contato-sucesso/
+Disallow: /checklist-ritual-diario-do-sucesso-obrigado/
+Disallow: /quadros/
+Disallow: /quadros-obrigado/
+Disallow: /quadros-confirmado/
