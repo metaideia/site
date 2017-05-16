@@ -1,0 +1,49 @@
+.big-text {
+  text-align: justify;
+
+  @media #{$desktop} {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.big-text .feat {
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.big-text .text-warning {
+  color: red;
+}
+
+.big-text .text-center {
+  text-align: center;
+}
+
+.big-text .text-bold {
+  font-weight: bold;
+}
+
+.big-text .form-cart {
+  border: 1px solid;
+  padding: 20px 15px;
+  margin: 40px 0;
+}
+
+.big-text .form-cart h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+
+.big-text .form-cart .price {
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.big-text .form-cart .subprice {
+  color: grey;
+  font-weight: bold;
+  font-size: 13px;
+}
