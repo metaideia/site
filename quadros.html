@@ -46,26 +46,23 @@ description: Quadros para decorar não só a sua parede, mas a sua mente.
 
         <img src="{{ site.baseurl }}/images/pages/quadros-frente.jpg">
 
-        <p><b>São 5 quadros em tamanho 30x40cm</b>, com moldura preta lisa e vidro anti-reflexo. Nos detalhes do acabamento, o fundo selado em preto para evitar o mofo é um diferencial.</p>
+        <p><b>São 5 quadros em tamanho 30x40cm</b>, com moldura preta lisa e vidro anti-reflexo. E aqui vai o meu bônus pra você: <b>o frete é grátis</b>!.</p>
 
-        <p>E aqui vai o meu bônus pra você: <b>o frete é grátis</b>! Além disso, as 50 primeiras pessoas que comprarem irão receber um brinde exclusivo: <b>um par de canecas do Metaideia</b>.</p>
+        <p><b>Mas fique atento: as vendas se encerram amanhã às 13h</b>. E a partir daí iremos começar a montar e preparar as peças para envio. Por ser um trabalho manual, precisaremos de <b>10 dias para deixar tudo pronto antes de começarmos a enviar os quadros pelos Correios</b>. Depois desse período você receberá o código de rastreamento para acompanhar o seu status, e o tempo de entrega dos Correios pode variar de acordo com o seu endereço.</p>
 
-        <img src="{{ site.baseurl }}/images/pages/quadros-caneca.jpg">
-
-        <p><b>Mas fique atento: as vendas se encerram na sexta-feira dia 19 às 13h</b>. E a partir daí iremos começar a montar e preparar as peças para envio. Por ser um trabalho manual, precisaremos de <b>12 dias para produção, antes de começarmos a enviar os quadros pelos Correios</b>. Depois desse período você receberá o código de rastreamento para acompanhar o seu status de entrega. Já o tempo de entrega dos Correios pode variar de acordo com o seu endereço.</p>
-
-        <p>E não se preocupe, nós vamos estar por aqui. Através do email <a href="mailto:oi@metaideia.com.br">oi@metaideia.com.br</a> você poderá falar com a gente sempre que precisar para tirar qualquer dúvida.</p>
+        <p>E não se preocupe, eu vou estar por aqui. Através do email <a href="mailto:oi@metaideia.com.br">oi@metaideia.com.br</a> você poderá falar comigo sempre que precisar para tirar qualquer dúvida.</p>
 
         <p>O valor da coleção é de <b>12 parcelas de R$ 39,86 no cartão</b> ou <b>R$ 397,00 à vista</b>. E os pagamentos são feitos através da plataforma do <b>Pagseguro</b>.</p>
 
-        <p><b>Então a partir de agora você já pode fazer o seu pedido</b>. Preencha os seus dados com atenção no formulário abaixo, principalmente seu email e telefone. Eles serão essenciais para que possamos manter contato.</p>
+        <p><b>Então a partir de agora você já pode fazer o seu pedido!</b></p>
+
+        <p>Um forte abraço, Robson Marques.</p>
 
         <div class="form-cart">
           <h2>Coleção Mindcolors</h2>
 
           <ul class="text-bold">
             <li>5 quadros 30x40cm</li>
-            <li>2 canecas</li>
             <li>Frete grátis</li>
           </ul>
 
@@ -74,9 +71,9 @@ description: Quadros para decorar não só a sua parede, mas a sua mente.
             <span class="subprice">ou 12 parcelas de R$ 39,86</span>
           </p>
 
-          <p>Preencha o formulário e clique em <b>continuar</b>. Você será redirecionado para o ambiente de pagamentos do Pagseguro.</p>
+          <form action="http://hike.metaideia.com.br/api/payments" method="post" class="form-pay">
+            <p>Preencha os dados com atenção e clique em <b>continuar</b>. Você será redirecionado para o ambiente seguro de pagamentos do Pagseguro.</p>
 
-          <form action="http://hike.metaideia.com.br/api/payments" method="post">
             <input type="hidden" name="data[redirect_success_url]" value="http://metaideia.com.br/quadros-sucesso">
             <input type="hidden" name="data[redirect_error_url]" value="http://metaideia.com.br/quadros-erro">
 
@@ -99,10 +96,22 @@ description: Quadros para decorar não só a sua parede, mas a sua mente.
 
             <button class="button button-launch" type="submit">CONTINUAR</button>
           </form>
+
+          <button class="button button-launch button-pay" type="button">QUERO UMA COLEÇÃO PRA MIM!</button>
         </div>
       </section>
     </div>
 
     {% include footer.html %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $('.form-pay').hide();
+
+      $('.button-pay').on('click', function() {
+        $(this).hide();
+        $('.form-pay').show();
+      });
+    </script>
   </body>
 </html>
