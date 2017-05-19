@@ -9,6 +9,7 @@ Disallow: /checklist-ritual-diario-do-sucesso-obrigado/
 Disallow: /quadros/
 Disallow: /quadros-sucesso/
 Disallow: /quadros-erro/
+Disallow: /quadros-aguarde/
 Disallow: /quadros-pre/
 Disallow: /quadros-obrigado/
 Disallow: /quadros-confirmado/
